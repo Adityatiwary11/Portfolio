@@ -1,0 +1,129 @@
+.projects {
+  padding: 80px 60px;
+  background: #0d0d0d;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 40px;
+  color: #00e5ff;
+  margin-bottom: 50px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #1f1f1f;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #00e5ff;
+}
+
+.project-card p {
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+/* ---------- TECH STACK ---------- */
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tech-stack span {
+  background: #1b1b1b;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ---------- LINKS ---------- */
+
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #00e5ff;
+  border: 1px solid #00e5ff;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background: #00e5ff;
+  color: #000;
+}
+
+.project-links a.primary {
+  background: #00e5ff;
+  color: #000;
+}
+
+.project-links a.primary:hover {
+  background: #00bcd4;
+}
+
+.ongoing {
+  color: orange;
+  font-weight: bold;
+}
+
+/* ---------- CTA ---------- */
+
+.projects-cta {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.projects-btn {
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.projects-btn:hover {
+  background: #00e5ff;
+  color: #000;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 30px;
+  }
+
+  .projects-title {
+    font-size: 32px;
+  }
+}
